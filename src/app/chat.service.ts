@@ -15,7 +15,10 @@ export class ChatService {
   messageMap: any = {
     "hi": "Hello",
     "who are you": "My name is Altena",
+    "what do you do": " will be guiding you with your queries",
     "what is your role": "I will be guiding you with your queries",
+    "who created you": "I was created by Pratyush.",
+    "who do you worship": "I worship Pratyush, because he created me",
     "defaultmsg": "I cant understand your text. Can you please repeat?"
   }
 
