@@ -14,11 +14,14 @@ export class ChatService {
   conversation = new Subject<Message[]>();
   messageMap: any = {
     "hi": "Hello",
-    "who are you": "My name is Altena",
+    "who are you": "Hi, I am Altena.",
+    "what is your name": "My name is Altena",
     "what do you do": " will be guiding you with your queries",
     "what is your role": "I will be guiding you with your queries",
     "who created you": "I was created by Pratyush.",
-    "who do you worship": "I worship Pratyush, because he created me",
+    "how are you": "never been better",
+    "bye": "See you, have a nice day!",
+    "thank you": "you're welcome", 
     "defaultmsg": "I cant understand your text. Can you please repeat?"
   }
 

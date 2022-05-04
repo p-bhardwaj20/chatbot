@@ -1,7 +1,4 @@
-.btn {
-    top: 10px;
-    margin-right: 20px
-  }
+
   .button-active {
     background-color: #9b4dca;
     color: white;
@@ -38,3 +35,10 @@
   .message.from + .message.from {
     margin-top: -10px;
 }
+
+label {
+    margin-left: 550px;
+    text-align: center;
+    color: #792d8a;
+}
+
