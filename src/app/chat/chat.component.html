@@ -3,12 +3,16 @@
       {{ message.content }}
     </div>
   </ng-container>
-  <label *ngIf="messages.length == 0; else dialogInfo" for="nameField">Chat Bot</label>
- 
-  <input style="margin-left: 20px; margin-top: 20px;" [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text" />
-  <div class="btn">
-  <button style=" margin-left: 680px; margin-top: 20px; background-color: #9b4dca; color: white;"  (click)="sendMessage()">Send</button>
+  <!-- <label *ngIf="messages.length == 0; else dialogInfo" for="nameField">Chat Bot</label> -->
+ <div class="search-box">
+  <input placeholder="Say something" class="search-txt" [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text" />
+  <a class="search-btn" (click)="sendMessage()">
+    <mat-icon>send</mat-icon>
+  </a>
 </div>
+  <!-- <div class="btn">
+  <button (click)="sendMessage()">Send</button>
+</div> -->
   <ng-template #dialogInfo>
     <span [className]="'float-right'">Total messages: {{ messages.length }}</span>
   </ng-template>

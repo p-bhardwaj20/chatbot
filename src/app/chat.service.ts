@@ -13,9 +13,10 @@ export class ChatService {
 
   conversation = new Subject<Message[]>();
   messageMap: any = {
-    "hi": "Hello",
-    "who are you": "Hi, I am Altena.",
-    "what is your name": "My name is Altena",
+    "hi": "Human presence detected 🤖. How can I help you?",
+    "who are you": "Hi, I am Altena. 🤖",
+    "what is your name": "My name is Altena 🤖",
+    "whats your name": "My name is Altena 🤖",
     "what do you do": " will be guiding you with your queries",
     "what is your role": "I will be guiding you with your queries",
     "who created you": "I was created by Pratyush.",
